@@ -1,16 +1,222 @@
 <!-- index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="dist/style.css">
-  <title>SCSS Project</title>
-</head>
-<body>
-  <header class="header">
-    <h1>Welcome to my SCSS Project</h1>
-  </header>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ecommerce Website" />
+    <!-- <link rel="stylesheet" href="dist/style.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>SCSS Project</title>
+  </head>
+  <body>
+    <header class="header" >
+      <h1>Welcome to my SCSS Project</h1>
+      <img src="src/image/logo.jpg" width="30" height="30" alt="logo" />
+      <nav aria-label="Menu Navigation">
+        <ul>
+          <li><a href="#" >Home</a></li>
+          <li><a href="#" >Shop</a></li>
+          <li><a href="#" >About</a></li>
+          <li><a href="#" >Contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <br /><br />
+    <section id="hero" aria-labelledby="Hero">
+      <div class="hero-heading">
+        <h1>Best selling products</h1>
+        </div>
+        <div class="hero-content">
+           <p>Here we have all the best-selling products that will appeal to you</p>
+      <button type="button"  >Shop Now</button>
+      </div>
+      
+ 
+    </section>
+
+    <section id="product" aria-labelledby="Product">
+      <div class="product-heading">
+        <h1>All products</h1>
+      </div>
+
+      <div class="product-container" >
+        <div class="product-card" >
+          <div class="image-product">
+            <img
+              src="./src/image/product1.jpg" width="20%"
+           
+              alt="product1"
+            />
+          </div>
+          <div class="product-details">
+            			<h2><a href="" aria-label="product-1">product 1</a></h2>
+                  
+              <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s,
+            </p>
+          <div class="product-bottom-details">
+             <div class="product-price">
+              <p>price <strong  >50 SR</strong></p>
+             </div>
+             <div class="product-icons">
+           
+              <i class="fas fa-shopping-cart" ></i>
+           
+              <i class="fas fa-heart" ></i>
+             </div>
+          </div>
+        </div>
+        </div>
+        
+       <div class="product-card">
+          <div class="image-product">
+            <img
+              src="./src/image/product2.jpg"
+            width="20%"
+              alt="product 2"
+            />
+          </div>
+          <div class="product-details">
+            			<h2><a href="">product 2</a></h2>
+                    <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s,
+            </p>
+          <div class="product-bottom-details">
+             <div class="product-price">
+              <p>price <strong >50 SR</strong></p>
+             </div>
+             <div class="product-icons">
+                        <i class="fas fa-shopping-cart" ></i>
+           
+              <i class="fas fa-heart" ></i>
+             </div>
+          </div>
+        </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="testimonials-heading">
+        <h1>testimonials</h1>
+      </div>
+      <div class="testimonials-container" >
+        <div class="testimonials-card">
+          <div class="top">
+            <div class="profile">
+              <img
+                src="./src/image/user.png"
+                class="img-profile"
+                width="30"
+                height="30"
+                alt="product image"
+              />
+              <div class="name">
+                <strong class="name-user">Amani</strong>
+                <span>@amaniatiah</span>
+              </div>
+            </div>
+            <div class="reviews" role="img" aria-label="5 stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="description">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </p>
+          </div>
+        </div>
+
+
+            <div class="testimonials-card">
+          <div class="top">
+            <div class="profile">
+              <img
+                src="./src/image/user.png"
+                class="img-profile"
+                width="30"
+                height="30"
+                alt="product image"
+              />
+              <div class="name">
+                <strong class="name-user">Amani</strong>
+                <span>@amaniatiah</span>
+              </div>
+            </div>
+            <div class="reviews">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="description">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </p>
+          </div>
+        </div>
+        
+
+      </div>
+    </section>
+    <section id ="newsletter" aria-labelledby="Newsletterr">
+       <div class="subscribe-heading">
+        <h1>Subscribe to Our Newsletter</h1>
+      </div>
+      <div class="box-newsletter">
+        <div class="form-box">
+          <form  aria-label="newsletter" role="form">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email" aria-label="Email Address">
+          <button type="submit" aria-label="subscribe">Subscribe</button>
+        </form>
+        </div>
+      </div>
+    </section>
+    <section id="footer" aria-labelledby="Footer">
+      <div class="footer-container">
+          
+      <div class="important-links" >
+        <nav aria-label="Main Navigation">
+          <ul>
+          <li><a  href="#">Home</a></li>
+          <li><a  href="#">Shop</a></li>
+          <li><a  href="#">About</a></li>
+          <li><a  href="#">Contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: amani@example.com</p>
+            <p>Phone: 5433666</p>
+      </div>
+      <div class="social-media">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="Twitter"> <i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="YouTube"> <i class="fab fa-youtube"></i></a>
+      </div>    
+    </section>
+  </body>
 </html>
